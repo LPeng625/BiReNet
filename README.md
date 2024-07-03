@@ -20,5 +20,5 @@ Massachusetts
 `python test_BiReNet_Mas.py`
 
 ## 3.Acknowledgments
-We thank the author of [RCFSNet](https://github.com/CVer-Yang/RCFSNet) for open-source code.
+We thank the authors of [RCFSNet](https://github.com/CVer-Yang/RCFSNet) for open-source code.
 
