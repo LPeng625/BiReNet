@@ -59,26 +59,26 @@ class BiReNet34(nn.Module):
         self.encoder4 = resnet.layer4
 
         if self.has_FFM:
-            self.stdc.FeatureFusionModule1 = ffm.FeatureFusionModule(
+            self.FeatureFusionModule1 = ffm.FeatureFusionModule(
                 filters[0],
                 norm_cfg=dict(type='BN'),
                 act_cfg=dict(type='ReLU'),
                 init_cfg=None)
 
-            self.stdc.FeatureFusionModule2 = ffm.FeatureFusionModule(
+            self.FeatureFusionModule2 = ffm.FeatureFusionModule(
                 filters[1],
                 norm_cfg=dict(type='BN'),
                 act_cfg=dict(type='ReLU'),
                 init_cfg=None)
 
-            self.stdc.FeatureFusionModule3 = ffm.FeatureFusionModule(
+            self.FeatureFusionModule3 = ffm.FeatureFusionModule(
                 filters[2],
                 norm_cfg=dict(type='BN'),
                 act_cfg=dict(type='ReLU'),
                 init_cfg=None)
 
         if self.has_EDM:
-            self.EDM = edm.init('carv4', init_stride=1, is_ori=True, inplane=64)
+            self.EDM = edm.init('carv4', is_ori=True, inplane=64)
 
         self.decoder4 = DecoderBlock(filters[3], filters[2])
         self.decoder3 = DecoderBlock(filters[2], filters[1])
