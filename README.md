@@ -34,6 +34,6 @@ If you find this repo useful, please cite our paper.
 }
 ```
 
-## 3.Acknowledgments
+## 4.Acknowledgments
 We thank the authors of [RCFSNet](https://github.com/CVer-Yang/RCFSNet) for open-source code.
 
