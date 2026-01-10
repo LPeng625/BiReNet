@@ -19,6 +19,21 @@ DeepGlobe
 Massachusetts
 `python test_BiReNet_Mas.py`
 
+## 3.Citation
+
+If you find this repo useful, please cite our paper.
+
+```
+@inproceedings{liu2024birenet,
+  title={BiReNet: Bilateral Network with Feature Aggregation and Edge Detection for Remote Sensing Images Road Extraction},
+  author={Liu, Peng and Qian, Yurong and Wei, Hongyang and Qin, Yugang and Fan, Yingying},
+  booktitle={Chinese Conference on Pattern Recognition and Computer Vision (PRCV)},
+  pages={401--415},
+  year={2024},
+  organization={Springer}
+}
+```
+
 ## 3.Acknowledgments
 We thank the authors of [RCFSNet](https://github.com/CVer-Yang/RCFSNet) for open-source code.
 
